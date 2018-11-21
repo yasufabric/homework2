@@ -1,3 +1,8 @@
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
 .site-wrapper {
   position: relative;
   height: auto;
@@ -5,7 +10,7 @@
   overflow: hidden;
 }
 
-#header {
+header {
   position: absolute;
   width: 100%;
   top: 0;
@@ -14,6 +19,19 @@
   color: #ffffff;
   padding: 0 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #ff4864;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
+  z-index: 5;
 }
 
 .wrapper {
@@ -29,4 +47,105 @@
   align-items: center;
   justify-content: space-between;
   height: 76px;
+}
+
+.header-content img {
+  width: 110px;
+}
+
+.home {
+  line-height: 0;
+}
+
+header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #ff4864;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
+  z-index: 5;
+}
+
+.logo-white {
+  visibility: visible;
+  display: inline-block;
+}
+
+.logo-red {
+  visibility: visible;
+  display: inline-block;
+}
+
+nav {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  color: inherit;
+}
+
+nav .sm-screen-hide {
+  display: inline-block;
+  visibility: visible;
+}
+
+@media screen and (min-width: 736px) {
+  .mobile-break {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+.banner {
+  height: 85vh;
+  min-height: 700px;
+  width: 100%;
+  max-width: 100vw;
+  display: block;
+  background: url(./assets/index/newbg-4bcc6bc5d8e84eee9db575fc4a14d30d9b981021ef4ce214f9fd6aeee0d9331a.svg)
+    center center no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  display: inline-block;
+  border-radius: 3rem;
+  font-weight: 700;
+}
+.btn-white {
+  background-color: #ffffff;
+  color: #ff4864;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+btn-white {
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
