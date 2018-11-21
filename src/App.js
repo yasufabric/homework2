@@ -1,24 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import logo-white from "./assets/liven-logos/liven-logo-white-ee1baa2fc3f9ed337b966e4fdea3bb85cc962cf99587b30f52deb2eab7578732.svg";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className="site-wrapper">
+        <header id="header">
+          <div className="wrapper">
+            <div className="header-content"><a href="#"><img src="/assets/liven-logos/liven-logo-white-ee1baa2fc3f9ed337b966e4fdea3bb85cc962cf99587b30f52deb2eab7578732.svg"></img></a></div>
+          </div>
         </header>
       </div>
     );
