@@ -19,6 +19,7 @@ h1 {
   width: 100%;
   overflow: hidden;
 }
+/*header*/
 
 header {
   position: absolute;
@@ -141,6 +142,8 @@ nav .sm-screen-hide {
   display: inline-block;
   visibility: visible;
 }
+
+/* top left banner */
 
 .banner {
   height: 85vh;
@@ -270,4 +273,193 @@ a {
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+/*vector images phone, chopstics, etc*/
+
+.vector-imgs-abs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 1600px;
+  z-index: 0;
+}
+
+#vector-images-container {
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 900px;
+}
+
+.fadeUpAndIn {
+  animation: fadeUpAndIn 1s forwards;
+}
+@keyframes fadeUpAndInA {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+
+.fadeUpAndInA {
+  animation: fadeUpAndInA 1s forwards;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+.vphone {
+  position: absolute;
+  top: 480px;
+  width: 300px;
+  left: 40%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+/* line 494, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+.chopsticks {
+  position: absolute;
+  top: 480px;
+  width: 280px;
+  left: 55%;
+  transform: translate(0%, 50%);
+  z-index: 1;
+}
+
+/* line 502, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+.plate {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  top: 400px;
+  width: 680px;
+  left: 85%;
+  transform: translate(0%, 50%);
+  z-index: 1;
+}
+
+/* line 512, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+.cup {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  top: 50px;
+  width: 280px;
+  left: 90%;
+  z-index: 1;
+}
+
+/* line 521, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+.sauce {
+  position: absolute;
+  top: 250px;
+  width: 280px;
+  left: 800px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 736px) {
+  /* line 532, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .vphone {
+    position: absolute;
+    top: 360px;
+    width: 420px;
+    left: 60%;
+    z-index: 1;
+  }
+
+  /* line 539, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .chopsticks {
+    position: absolute;
+    top: 360px;
+    width: 400px;
+    left: 70%;
+    z-index: 1;
+  }
+
+  /* line 546, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .sauce {
+    position: absolute;
+    top: 300px;
+    width: 200px;
+    left: 75%;
+    z-index: 1;
+  }
+
+  /* line 555, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .cup {
+    position: absolute;
+    display: block;
+    visibility: visible;
+    top: 25px;
+    width: 280px;
+    left: 100%;
+    z-index: 1;
+  }
+
+  /* line 564, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .plate {
+    top: 400px;
+    width: 680px;
+    left: 85%;
+    transform: translate(0%, 50%);
+    z-index: 1;
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  /* line 575, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .vphone {
+    position: absolute;
+    top: 260px;
+    width: 620px;
+    left: 58%;
+    z-index: 1;
+  }
+
+  /* line 582, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .chopsticks {
+    top: 350px;
+    width: 500px;
+    left: 67%;
+    z-index: 1;
+  }
+
+  /* line 588, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .sauce {
+    top: 250px;
+    width: 280px;
+    left: 70%;
+    z-index: 1;
+  }
+
+  /* line 594, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .plate {
+    top: 400px;
+    width: 680px;
+    left: 85%;
+    transform: translate(0%, 50%);
+    z-index: 1;
+  }
+
+  /* line 601, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
+  .cup {
+    top: 80px;
+    width: 280px;
+    left: 92%;
+    z-index: 1;
+  }
 }
