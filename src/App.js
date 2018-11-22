@@ -4,10 +4,23 @@ import logoWhite from "./assets/liven-logos/liven-logo-white-ee1baa2fc3f9ed337b9
 import logoRed from "./assets/liven-logos/liven-logo-red-90dd22ba307ff1e59019e21d999b4615bc63b821d16d92ecc465ceaf3924837c.svg";
 
 class App extends Component {
+  state = {
+    isTop: true
+  };
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop });
+      }
+    });
+  }
+
   render() {
     return (
       <div className="site-wrapper">
-        <header id="header" class>
+        <header id="header" className={this.state.isTop ? "" : "sticky"}>
           <div className="wrapper">
             <div className="header-content">
               <a class="home" href="/">
