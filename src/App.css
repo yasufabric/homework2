@@ -1,3 +1,13 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -69,6 +79,7 @@ header.sticky nav i {
 header.sticky nav .btn-white {
   padding: 0.5rem 1.25rem;
 }
+
 .wrapper {
   max-width: 1000px;
   width: 100%;
@@ -146,7 +157,7 @@ nav .sm-screen-hide {
   padding: 1rem;
 }
 
-.banner-contents {
+.banner .banner-contents {
   position: relative;
   width: 100%;
   height: 100%;
@@ -168,9 +179,45 @@ nav .sm-screen-hide {
 }
 
 @media screen and (min-width: 736px) {
+  .banner .call-to-action {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 736px) {
   .mobile-break {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .banner .call-to-action,
+  .banner-medium .call-to-action {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .banner .call-to-action h2,
+  .banner-medium .call-to-action h2 {
+    padding-left: 0;
+    min-height: 0;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .banner .call-to-action h1,
+  .banner .call-to-action h2,
+  .banner .call-to-action p,
+  .banner-medium .call-to-action h1,
+  .banner-medium .call-to-action h2,
+  .banner-medium .call-to-action p {
+    text-align: inherit;
   }
 }
 
@@ -188,6 +235,21 @@ a {
   border-radius: 3rem;
   font-weight: 700;
 }
+.btn-container {
+  display: inline-block;
+  text-align: center;
+}
+.btn-large {
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 3rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  -webkit-box-shadow: 4px 4px 5px 0px #cc3750;
+  -moz-box-shadow: 4px 4px 5px 0px #cc3750;
+  box-shadow: 4px 4px 5px 0px #cc3750;
+  transition: 0.2s ease-in-out;
+}
 .btn-white {
   background-color: #ffffff;
   color: #ff4864;
@@ -196,8 +258,16 @@ a {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease-in-out;
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+
+.small {
+  margin: 0.5rem 0;
+  padding: 0;
+  font-size: 85%;
+}
+
+.white-wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }

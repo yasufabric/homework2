@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import logoWhite from "./assets/liven-logos/liven-logo-white-ee1baa2fc3f9ed337b966e4fdea3bb85cc962cf99587b30f52deb2eab7578732.svg";
 import logoRed from "./assets/liven-logos/liven-logo-red-90dd22ba307ff1e59019e21d999b4615bc63b821d16d92ecc465ceaf3924837c.svg";
-
+import whiteWave from "./assets/shared/white-wave-b642b0f1065f11f465b4453bcea9eef1d7e51b1920c347e90c76a3e507282115.png";
 class App extends Component {
   state = {
     isTop: true
@@ -10,7 +10,7 @@ class App extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 100;
+      const isTop = window.scrollY < 200;
       if (isTop !== this.state.isTop) {
         this.setState({ isTop });
       }
@@ -75,22 +75,24 @@ class App extends Component {
           <div className="wrapper" />
           <div className="call-to-action">
             <h1>
-              "Find, Eat," <br />" Earn, Repeat"
+              Find, Eat, <br /> Earn, Repeat
             </h1>
             <h2>
-              " Sign now and get "<br className="mobile-break" />
-              "free "
+              Sign up now and get <br className="mobile-break" />
+              free
               <span className="typewriter">
-                "food!"
+                {""} food!
                 <span aria-hidden="true" />
               </span>
             </h2>
             <div className="btn-container">
               <a className="btn-large btn-white" href="#">
-                aaa
+                Get Started
               </a>
+              <p className="small">*New Users Only</p>
             </div>
           </div>
+          <img className="white-wave" src={whiteWave} alt="white-wave" />
         </section>
       </div>
     );
