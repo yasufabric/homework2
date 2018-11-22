@@ -70,7 +70,28 @@ class App extends Component {
             </div>
           </div>
         </header>
-        <section className="banner" />
+        <section className="banner">
+          <div className="banner-contetns" />
+          <div className="wrapper" />
+          <div className="call-to-action">
+            <h1>
+              "Find, Eat," <br />" Earn, Repeat"
+            </h1>
+            <h2>
+              " Sign now and get "<br className="mobile-break" />
+              "free "
+              <span className="typewriter">
+                "food!"
+                <span aria-hidden="true" />
+              </span>
+            </h2>
+            <div className="btn-container">
+              <a className="btn-large btn-white" href="#">
+                aaa
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
