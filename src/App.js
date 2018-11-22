@@ -8,7 +8,7 @@ import chopsticks from "./assets/shared/food-vectors/chopsticks-ef63ad407df9ec89
 import plate from "./assets/shared/food-vectors/plate-3cb07a62f0a7297756b552ee5400d4786524cfd3aada3a1a39fb7854eec7da42.svg";
 import cup from "./assets/shared/food-vectors/cup-55f9805d8bfe74fd6343f83adff4d3b49281844e004af8b4aea87b3b46474257.svg";
 import sauce from "./assets/shared/food-vectors/sauce-639155208ba1b47324518a2311197b1fd2c57cfb725f066f9cdebe6dddce6579.svg";
-
+import phonemovie from "./assets/liven-final-494d3e297773d9c072c2b76089140571752d6bd12dbdb65c2f81a3dc3b6a0d6c.mp4";
 class App extends Component {
   state = {
     isTop: true
@@ -92,7 +92,10 @@ class App extends Component {
               </span>
             </h2>
             <div className="btn-container">
-              <a className="btn-large btn-white" href="#">
+              <a
+                className="btn-large btn-white"
+                href="https://www.liven.com.au/welcome/members/new"
+              >
                 Get Started
               </a>
               <p className="small">*New Users Only</p>
@@ -109,6 +112,49 @@ class App extends Component {
             <img className="sauce" src={sauce} alt="sauce" />
           </div>
         </div>
+        <section class="how-it-works">
+          <div class="wrapper">
+            <div class="how-it-works-content">
+              <div class="phone">
+                <video
+                  onloadeddata="this.play();"
+                  autoplay
+                  preload
+                  loop
+                  playsinline
+                  muted
+                >
+                  <source src={phonemovie} type="video/mp4" />
+                  <source
+                    src="/assets/liven-final-836898e511ee08fbbdc8e604aae1d88226fd9dcf880c6f00c68cba7226c09d94.webm"
+                    type="video/webm"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="featured-venue">
+          <div />
+        </section>
+        <section className="brands">
+          <div />
+        </section>
+        <section className="show-reel">
+          <div />
+        </section>
+        <section className="brands">
+          <div />
+        </section>
+        <section className="offer-cards">
+          <div />
+        </section>
+        <section className="partner-with-us">
+          <div />
+        </section>
+        <footer>
+          <div />
+        </footer>
       </div>
     );
   }

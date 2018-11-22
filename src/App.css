@@ -328,7 +328,6 @@ img {
   z-index: 1;
 }
 
-/* line 494, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
 .chopsticks {
   position: absolute;
   top: 480px;
@@ -338,7 +337,6 @@ img {
   z-index: 1;
 }
 
-/* line 502, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
 .plate {
   position: absolute;
   display: none;
@@ -350,7 +348,6 @@ img {
   z-index: 1;
 }
 
-/* line 512, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
 .cup {
   position: absolute;
   display: none;
@@ -361,7 +358,6 @@ img {
   z-index: 1;
 }
 
-/* line 521, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
 .sauce {
   position: absolute;
   top: 250px;
@@ -371,7 +367,6 @@ img {
 }
 
 @media only screen and (min-width: 736px) {
-  /* line 532, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .vphone {
     position: absolute;
     top: 360px;
@@ -380,7 +375,6 @@ img {
     z-index: 1;
   }
 
-  /* line 539, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .chopsticks {
     position: absolute;
     top: 360px;
@@ -389,7 +383,6 @@ img {
     z-index: 1;
   }
 
-  /* line 546, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .sauce {
     position: absolute;
     top: 300px;
@@ -398,7 +391,6 @@ img {
     z-index: 1;
   }
 
-  /* line 555, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .cup {
     position: absolute;
     display: block;
@@ -409,7 +401,6 @@ img {
     z-index: 1;
   }
 
-  /* line 564, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .plate {
     top: 400px;
     width: 680px;
@@ -421,7 +412,6 @@ img {
   }
 }
 @media only screen and (min-width: 1000px) {
-  /* line 575, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .vphone {
     position: absolute;
     top: 260px;
@@ -430,7 +420,6 @@ img {
     z-index: 1;
   }
 
-  /* line 582, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .chopsticks {
     top: 350px;
     width: 500px;
@@ -438,7 +427,6 @@ img {
     z-index: 1;
   }
 
-  /* line 588, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .sauce {
     top: 250px;
     width: 280px;
@@ -446,7 +434,6 @@ img {
     z-index: 1;
   }
 
-  /* line 594, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .plate {
     top: 400px;
     width: 680px;
@@ -455,11 +442,61 @@ img {
     z-index: 1;
   }
 
-  /* line 601, /Users/hamishbuttle/Documents/Liven/Website/vectorFrontstore/app/assets/stylesheets/pages/_index.scss */
   .cup {
     top: 80px;
     width: 280px;
     left: 92%;
     z-index: 1;
   }
+}
+.how-it-works {
+  text-align: center;
+  padding: 6rem 0 4rem 0;
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  .how-it-works-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .how-it-works-content .phone {
+    height: auto;
+    margin: 0 auto 0 auto !important;
+    display: block;
+    padding: 1rem;
+    flex: none;
+  }
+}
+@media screen and (min-width: 736px) {
+  .how-it-works-content .phone {
+    flex: 3;
+    margin-right: 3rem;
+  }
+}
+
+.featured-venue {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.brands {
+  position: relative;
+}
+
+.show-reel {
+  padding: 1rem 0;
+}
+
+.offer-cards {
+  padding: 0 1rem;
+}
+
+.partner-with-us {
+  text-align: center;
+  padding: 2rem 2rem 3rem 2rem;
+  position: relative;
 }
